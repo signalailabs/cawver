@@ -272,8 +272,8 @@ const Home = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-4 gap-12 text-center">
             <div>
-              <p className="text-5xl font-semibold text-gray-900">$500K</p>
-              <p className="text-gray-500 mt-2">Average check size</p>
+              <p className="text-5xl font-semibold text-gray-900">$50K-$750K</p>
+              <p className="text-gray-500 mt-2">Check size</p>
             </div>
             <div>
               <p className="text-5xl font-semibold text-gray-900">Pre-seed</p>
@@ -376,7 +376,7 @@ const Thesis = () => {
           <h2 className="text-2xl font-semibold text-gray-900 mt-12 mb-4">How we work</h2>
 
           <p className="text-gray-500">
-            We write $250K-$750K checks at pre-seed and seed stages. We move fast, typically reaching a decision within
+            We write $50K-$750K checks at pre-seed and seed stages. We move fast, typically reaching a decision within
             two weeks of our first meeting. We're hands-on when you want us to be and hands-off when you don't.
           </p>
 
