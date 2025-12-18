@@ -2,6 +2,42 @@ import { useState } from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { ArrowRight, Brain, TrendingUp, Mail, Menu, X, Sparkles, Target, Heart, Wheat, Database, Cpu, BarChart3, Microscope, Leaf } from 'lucide-react';
 
+// Cawver Car Logo - The Discovery Vehicle
+const CawverCar = ({ className = "", animate = false }) => (
+  <svg viewBox="0 0 120 100" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
+    {/* Car body */}
+    <path
+      d="M15 70 Q15 35 60 35 Q105 35 105 70 L105 75 L15 75 Z"
+      fill="#f8fafc"
+      stroke="#4a9a9a"
+      strokeWidth="3"
+    />
+    {/* Window divider */}
+    <line x1="60" y1="35" x2="60" y2="70" stroke="#e2e8f0" strokeWidth="2" />
+    {/* Left window tint */}
+    <path
+      d="M18 70 Q18 40 58 40 L58 70 Z"
+      fill="#d1d5db"
+      opacity="0.3"
+    />
+    {/* Tail lights */}
+    <rect x="100" y="52" width="8" height="4" rx="1" fill="#f59e0b" />
+    <rect x="100" y="58" width="8" height="4" rx="1" fill="#ef4444" />
+    {/* Left wheel */}
+    <g className={animate ? "animate-spin-slow" : ""} style={{ transformOrigin: '30px 80px' }}>
+      <circle cx="30" cy="80" r="15" fill="#334155" stroke="#4a9a9a" strokeWidth="3" />
+      <circle cx="30" cy="80" r="8" fill="#f8fafc" />
+      <circle cx="30" cy="80" r="3" fill="#334155" />
+    </g>
+    {/* Right wheel */}
+    <g className={animate ? "animate-spin-slow" : ""} style={{ transformOrigin: '90px 80px' }}>
+      <circle cx="90" cy="80" r="15" fill="#334155" stroke="#4a9a9a" strokeWidth="3" />
+      <circle cx="90" cy="80" r="8" fill="#f8fafc" />
+      <circle cx="90" cy="80" r="3" fill="#334155" />
+    </g>
+  </svg>
+);
+
 // Navigation Component
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,8 +49,9 @@ const Navigation = () => {
     <nav className="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex justify-between items-center h-20">
-          <Link to="/" className="text-2xl font-semibold tracking-tight text-gray-900">
-            cawver
+          <Link to="/" className="flex items-center gap-2">
+            <CawverCar className="w-10 h-8" />
+            <span className="text-2xl font-semibold tracking-tight text-gray-900">cawver</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -39,7 +76,7 @@ const Navigation = () => {
             </Link>
             <Link
               to="/pitch"
-              className="text-sm font-medium text-white bg-gray-900 px-5 py-2.5 rounded-full hover:bg-gray-800 transition-colors"
+              className="text-sm font-medium text-white bg-teal-600 px-5 py-2.5 rounded-full hover:bg-teal-700 transition-colors"
             >
               Pitch Us
             </Link>
@@ -75,8 +112,14 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <section className="pt-40 pb-32 px-6">
+      <section className="pt-40 pb-32 px-6 overflow-hidden">
         <div className="max-w-4xl mx-auto">
+          {/* Animated Car */}
+          <div className="mb-8 relative">
+            <div className="inline-block animate-bounce-gentle">
+              <CawverCar className="w-24 h-20" />
+            </div>
+          </div>
           <h1 className="text-5xl md:text-7xl font-semibold text-gray-900 leading-tight tracking-tight">
             Discover the future.
             <br />
@@ -88,7 +131,7 @@ const Home = () => {
           <div className="mt-12 flex flex-col sm:flex-row gap-4">
             <Link
               to="/pitch"
-              className="inline-flex items-center justify-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-teal-600 text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-teal-700 transition-colors"
             >
               Share Your Vision
               <ArrowRight size={16} />
@@ -118,7 +161,7 @@ const Home = () => {
             {/* Healthcare */}
             <div className="bg-white rounded-2xl p-10">
               <div className="flex items-center gap-3 mb-6">
-                <Heart className="text-gray-700" size={32} />
+                <Heart className="text-teal-600" size={32} />
                 <h3 className="text-2xl font-semibold text-gray-900">Healthcare</h3>
               </div>
               <p className="text-gray-500 leading-relaxed mb-8">
@@ -171,7 +214,7 @@ const Home = () => {
             {/* Food & Agriculture */}
             <div className="bg-white rounded-2xl p-10">
               <div className="flex items-center gap-3 mb-6">
-                <Wheat className="text-gray-700" size={32} />
+                <Wheat className="text-teal-600" size={32} />
                 <h3 className="text-2xl font-semibold text-gray-900">Food & Agriculture</h3>
               </div>
               <p className="text-gray-500 leading-relaxed mb-8">
@@ -249,17 +292,17 @@ const Home = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-24 px-6 bg-gray-900">
+      <section className="py-24 px-6 bg-teal-600">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
             Ready to build something extraordinary?
           </h2>
-          <p className="text-gray-400 text-lg mb-10">
+          <p className="text-teal-100 text-lg mb-10">
             We're looking for ambitious founders who see the world differently.
           </p>
           <Link
             to="/pitch"
-            className="inline-flex items-center gap-2 bg-white text-gray-900 px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
+            className="inline-flex items-center gap-2 bg-white text-teal-700 px-8 py-4 rounded-full text-sm font-medium hover:bg-teal-50 transition-colors"
           >
             Get in Touch
             <ArrowRight size={16} />
@@ -292,8 +335,8 @@ const Thesis = () => {
 
           <div className="space-y-8">
             <div className="flex gap-6">
-              <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                <Target className="text-gray-700" size={20} />
+              <div className="w-10 h-10 bg-teal-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Target className="text-teal-600" size={20} />
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Deep technical insight</h3>
@@ -304,8 +347,8 @@ const Thesis = () => {
             </div>
 
             <div className="flex gap-6">
-              <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                <TrendingUp className="text-gray-700" size={20} />
+              <div className="w-10 h-10 bg-teal-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                <TrendingUp className="text-teal-600" size={20} />
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Large market opportunity</h3>
@@ -316,8 +359,8 @@ const Thesis = () => {
             </div>
 
             <div className="flex gap-6">
-              <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                <Sparkles className="text-gray-700" size={20} />
+              <div className="w-10 h-10 bg-teal-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Sparkles className="text-teal-600" size={20} />
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Timing advantage</h3>
@@ -346,7 +389,7 @@ const Thesis = () => {
         <div className="mt-16">
           <Link
             to="/pitch"
-            className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors"
+            className="inline-flex items-center gap-2 bg-teal-600 text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-teal-700 transition-colors"
           >
             Share Your Vision
             <ArrowRight size={16} />
@@ -372,9 +415,9 @@ const Portfolio = () => {
         </p>
 
         {/* Placeholder for portfolio companies */}
-        <div className="bg-gray-50 rounded-2xl p-16 text-center">
-          <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-6">
-            <Sparkles className="text-gray-400" size={28} />
+        <div className="bg-teal-50 rounded-2xl p-16 text-center">
+          <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <Sparkles className="text-teal-600" size={28} />
           </div>
           <h3 className="text-xl font-semibold text-gray-900 mb-3">Coming Soon</h3>
           <p className="text-gray-500 max-w-md mx-auto">
@@ -386,7 +429,7 @@ const Portfolio = () => {
           <p className="text-gray-500 mb-6">Want to be part of our portfolio?</p>
           <Link
             to="/pitch"
-            className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors"
+            className="inline-flex items-center gap-2 bg-teal-600 text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-teal-700 transition-colors"
           >
             Pitch Us
             <ArrowRight size={16} />
@@ -413,10 +456,10 @@ const Pitch = () => {
 
         <div className="space-y-8">
           {/* Email Option */}
-          <div className="bg-gray-50 rounded-2xl p-8">
+          <div className="bg-teal-50 rounded-2xl p-8">
             <div className="flex items-start gap-6">
               <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm">
-                <Mail className="text-gray-700" size={24} />
+                <Mail className="text-teal-600" size={24} />
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Send us your deck</h3>
@@ -425,7 +468,7 @@ const Pitch = () => {
                 </p>
                 <a
                   href="mailto:pitch@cawver.com"
-                  className="text-gray-900 font-medium hover:text-gray-600 transition-colors"
+                  className="text-teal-700 font-medium hover:text-teal-600 transition-colors"
                 >
                   pitch@cawver.com
                 </a>
@@ -438,42 +481,42 @@ const Pitch = () => {
             <h3 className="text-xl font-semibold text-gray-900 mb-6">What we want to understand</h3>
             <ul className="space-y-5 text-gray-500">
               <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 bg-gray-900 rounded-full mt-2 flex-shrink-0"></span>
+                <span className="w-1.5 h-1.5 bg-teal-600 rounded-full mt-2 flex-shrink-0"></span>
                 <div>
                   <span className="text-gray-900 font-medium">The problem & your solution</span>
                   <p className="text-sm mt-1">What pain are you solving? How does your product work?</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 bg-gray-900 rounded-full mt-2 flex-shrink-0"></span>
+                <span className="w-1.5 h-1.5 bg-teal-600 rounded-full mt-2 flex-shrink-0"></span>
                 <div>
                   <span className="text-gray-900 font-medium">Why now?</span>
                   <p className="text-sm mt-1">What's changed that makes this the right time to build this?</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 bg-gray-900 rounded-full mt-2 flex-shrink-0"></span>
+                <span className="w-1.5 h-1.5 bg-teal-600 rounded-full mt-2 flex-shrink-0"></span>
                 <div>
                   <span className="text-gray-900 font-medium">Your data/AI moat</span>
                   <p className="text-sm mt-1">What's defensible? Proprietary data, unique model, or network effects?</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 bg-gray-900 rounded-full mt-2 flex-shrink-0"></span>
+                <span className="w-1.5 h-1.5 bg-teal-600 rounded-full mt-2 flex-shrink-0"></span>
                 <div>
                   <span className="text-gray-900 font-medium">Market size</span>
                   <p className="text-sm mt-1">How big is the opportunity? Who are the buyers?</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 bg-gray-900 rounded-full mt-2 flex-shrink-0"></span>
+                <span className="w-1.5 h-1.5 bg-teal-600 rounded-full mt-2 flex-shrink-0"></span>
                 <div>
                   <span className="text-gray-900 font-medium">Team & unfair advantage</span>
                   <p className="text-sm mt-1">Why are you the right people to build this?</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 bg-gray-900 rounded-full mt-2 flex-shrink-0"></span>
+                <span className="w-1.5 h-1.5 bg-teal-600 rounded-full mt-2 flex-shrink-0"></span>
                 <div>
                   <span className="text-gray-900 font-medium">The ask</span>
                   <p className="text-sm mt-1">How much are you raising and what will you do with it?</p>
@@ -500,15 +543,19 @@ const Footer = () => {
     <footer className="bg-white border-t border-gray-100 py-12 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="text-2xl font-semibold text-gray-900">cawver</div>
+          <div className="flex items-center gap-2">
+            <CawverCar className="w-10 h-8" />
+            <span className="text-2xl font-semibold text-gray-900">cawver</span>
+          </div>
           <div className="flex items-center gap-8">
             <Link to="/thesis" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Thesis</Link>
             <Link to="/portfolio" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Portfolio</Link>
             <Link to="/pitch" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Pitch Us</Link>
           </div>
-          <p className="text-sm text-gray-400">
-            &copy; 2025 Cawver. All rights reserved.
-          </p>
+          <div className="text-sm text-gray-400 text-center md:text-right">
+            <p>&copy; 2025 Cawver. All rights reserved.</p>
+            <p className="text-xs text-gray-300 mt-1">Logo designed by Pritam Pebam, 2014</p>
+          </div>
         </div>
       </div>
     </footer>
