@@ -126,7 +126,7 @@ const Home = () => {
             <span className="text-gray-400">Cover the seed.</span>
           </h1>
           <p className="mt-8 text-xl text-gray-500 max-w-2xl leading-relaxed">
-            We back founders using AI and data to solve real problems — improving patient outcomes, feeding communities sustainably, and building the infrastructure that connects technology to human impact.
+            We back practitioner-founders using AI and data to transform healthcare and agriculture — people who've lived the problem and now have the tools to solve it at scale.
           </p>
           <div className="mt-12 flex flex-col sm:flex-row gap-4">
             <Link
@@ -151,10 +151,10 @@ const Home = () => {
         <div className="max-w-6xl mx-auto">
           <p className="text-sm font-medium text-gray-400 uppercase tracking-wider mb-4">Our Focus</p>
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
-            AI, ML & Data transforming critical industries
+            Practitioner insight, amplified by technology
           </h2>
           <p className="text-xl text-gray-500 mb-16 max-w-3xl">
-            We invest in founders applying artificial intelligence, machine learning, deep learning, and data science to solve fundamental challenges in healthcare and food systems.
+            We back founders who've lived the problem and are using AI, data, and smart systems to scale solutions that were never possible before.
           </p>
 
           <div className="grid md:grid-cols-2 gap-12">
@@ -165,7 +165,7 @@ const Home = () => {
                 <h3 className="text-2xl font-semibold text-gray-900">Healthcare</h3>
               </div>
               <p className="text-gray-500 leading-relaxed mb-8">
-                AI and data are revolutionizing how we diagnose, treat, and prevent disease. We back founders building intelligent systems that improve patient outcomes and reduce costs.
+                Clinicians, community health workers, and caregivers using AI and data to close gaps in care delivery.
               </p>
 
               <div className="space-y-6">
@@ -174,8 +174,8 @@ const Home = () => {
                     <Brain className="text-gray-600" size={20} />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Clinical AI & Diagnostics</h4>
-                    <p className="text-sm text-gray-500">Deep learning for medical imaging, pathology analysis, and early disease detection</p>
+                    <h4 className="font-semibold text-gray-900 mb-1">Community Health</h4>
+                    <p className="text-sm text-gray-500">AI-powered screening and follow-up tools that help frontline workers reach more patients in underserved areas</p>
                   </div>
                 </div>
 
@@ -184,8 +184,8 @@ const Home = () => {
                     <Microscope className="text-gray-600" size={20} />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Drug Discovery & Genomics</h4>
-                    <p className="text-sm text-gray-500">ML-powered drug candidate screening, genomic analysis, and personalized medicine</p>
+                    <h4 className="font-semibold text-gray-900 mb-1">Clinical Decision Support</h4>
+                    <p className="text-sm text-gray-500">ML models that help doctors, nurses, and pharmacists make faster, better decisions at the point of care</p>
                   </div>
                 </div>
 
@@ -194,8 +194,8 @@ const Home = () => {
                     <Database className="text-gray-600" size={20} />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Health Data Infrastructure</h4>
-                    <p className="text-sm text-gray-500">Interoperability platforms, real-world data aggregation, and clinical data pipelines</p>
+                    <h4 className="font-semibold text-gray-900 mb-1">Mental Health Access</h4>
+                    <p className="text-sm text-gray-500">Digital tools that extend the reach of counsellors and therapists to those who need support most</p>
                   </div>
                 </div>
 
@@ -204,8 +204,8 @@ const Home = () => {
                     <BarChart3 className="text-gray-600" size={20} />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Predictive Analytics</h4>
-                    <p className="text-sm text-gray-500">Population health management, risk stratification, and outcome prediction models</p>
+                    <h4 className="font-semibold text-gray-900 mb-1">Care Coordination</h4>
+                    <p className="text-sm text-gray-500">Data platforms connecting patients, providers, and pharmacies for seamless continuity of care</p>
                   </div>
                 </div>
               </div>
@@ -218,7 +218,7 @@ const Home = () => {
                 <h3 className="text-2xl font-semibold text-gray-900">Food & Agriculture</h3>
               </div>
               <p className="text-gray-500 leading-relaxed mb-8">
-                Feeding the world sustainably demands smarter systems. We invest in AI and data solutions that optimize every step from farm to fork.
+                Farmers, agronomists, and food system operators using data and automation to grow and deliver food sustainably.
               </p>
 
               <div className="space-y-6">
@@ -269,27 +269,19 @@ const Home = () => {
 
       {/* Stats */}
       <section className="py-24 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-5 gap-8 text-center">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-3 gap-12 text-center">
             <div>
-              <p className="text-3xl md:text-4xl font-semibold text-gray-900">$50K-$750K</p>
+              <p className="text-4xl md:text-5xl font-semibold text-gray-900">$50K-$750K</p>
               <p className="text-gray-500 mt-2">Check size</p>
             </div>
             <div>
-              <p className="text-3xl md:text-4xl font-semibold text-gray-900">Pre-seed</p>
+              <p className="text-4xl md:text-5xl font-semibold text-gray-900">Pre-seed</p>
               <p className="text-gray-500 mt-2">Primary stage</p>
             </div>
             <div>
-              <p className="text-3xl md:text-4xl font-semibold text-gray-900">2 weeks</p>
+              <p className="text-4xl md:text-5xl font-semibold text-gray-900">2 weeks</p>
               <p className="text-gray-500 mt-2">Decision timeline</p>
-            </div>
-            <div>
-              <p className="text-3xl md:text-4xl font-semibold text-gray-900">Founder First</p>
-              <p className="text-gray-500 mt-2">Our mentality</p>
-            </div>
-            <div>
-              <p className="text-3xl md:text-4xl font-semibold text-gray-900">India & Africa</p>
-              <p className="text-gray-500 mt-2">Geographic focus</p>
             </div>
           </div>
         </div>
@@ -299,10 +291,10 @@ const Home = () => {
       <section className="py-24 px-6 bg-teal-600">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
-            Ready to build something extraordinary?
+            You've lived the problem. Now build the solution.
           </h2>
           <p className="text-teal-100 text-lg mb-10">
-            We're looking for ambitious founders who see the world differently.
+            If you're a clinician, farmer, or community worker ready to turn your insight into impact — we want to hear from you.
           </p>
           <Link
             to="/pitch"
@@ -324,13 +316,14 @@ const Thesis = () => {
       <div className="max-w-3xl mx-auto">
         <p className="text-sm font-medium text-gray-400 uppercase tracking-wider mb-4">Our Thesis</p>
         <h1 className="text-4xl md:text-5xl font-semibold text-gray-900 leading-tight mb-8">
-          We believe data and AI will reshape every industry
+          The best founders have lived the problem
         </h1>
 
         <div className="prose prose-lg text-gray-600 space-y-6">
           <p className="text-xl text-gray-500 leading-relaxed">
-            The companies that will define the next decade are being founded today. They're building the infrastructure
-            that will make data accessible, AI practical, and intelligent applications ubiquitous.
+            We believe the most impactful companies are built by people who've worked on the frontlines —
+            clinicians who know where care breaks down, farmers who understand what it takes to grow food sustainably,
+            community workers who see the gaps others miss.
           </p>
 
           <hr className="my-12 border-gray-200" />
@@ -343,9 +336,9 @@ const Thesis = () => {
                 <Target className="text-teal-600" size={20} />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Deep technical insight</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Practitioner insight</h3>
                 <p className="text-gray-500">
-                  Founders who understand their domain at a fundamental level and have a unique perspective on how to solve hard problems.
+                  Founders who've done the work — treated patients, grown crops, served communities — and deeply understand the problems they're solving.
                 </p>
               </div>
             </div>
@@ -355,9 +348,9 @@ const Thesis = () => {
                 <TrendingUp className="text-teal-600" size={20} />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Large market opportunity</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Real-world impact</h3>
                 <p className="text-gray-500">
-                  Problems that matter at scale. We invest in companies that can become category-defining businesses.
+                  Solutions that improve patient outcomes, help farmers thrive, or strengthen food security — not technology for technology's sake.
                 </p>
               </div>
             </div>
@@ -367,9 +360,9 @@ const Thesis = () => {
                 <Sparkles className="text-teal-600" size={20} />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Timing advantage</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Scalable approach</h3>
                 <p className="text-gray-500">
-                  Why now? The best opportunities emerge at inflection points in technology or market dynamics.
+                  Ideas that can grow beyond one clinic, one farm, one community — reaching the millions who need these solutions.
                 </p>
               </div>
             </div>
@@ -385,8 +378,9 @@ const Thesis = () => {
           </p>
 
           <p className="text-gray-500">
-            Our network includes operators and executives at leading data and AI companies who can help with
-            technical challenges, go-to-market strategy, and recruiting.
+            Our portfolio companies get access to production-grade data infrastructure, ML pipelines, and
+            interoperability platforms — so practitioner-founders can focus on what they do best:
+            serving patients and feeding communities.
           </p>
         </div>
 
@@ -415,17 +409,105 @@ const Portfolio = () => {
         </h1>
 
         <p className="text-xl text-gray-500 mb-16">
-          We're proud to partner with exceptional founders building the future of data and AI.
+          Practitioner-founders building solutions for the communities they know and serve.
         </p>
 
-        {/* Placeholder for portfolio companies */}
-        <div className="bg-teal-50 rounded-2xl p-16 text-center">
-          <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-6">
-            <Sparkles className="text-teal-600" size={28} />
+        {/* Portfolio Companies */}
+        <div className="space-y-8">
+          {/* Healthcare */}
+          <div className="bg-white border border-gray-200 rounded-2xl p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 bg-rose-100 rounded-lg flex items-center justify-center">
+                <Heart className="text-rose-600" size={20} />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900">Healthcare</h3>
+            </div>
+            <div className="space-y-6">
+              <div className="border-l-2 border-teal-500 pl-6">
+                <h4 className="font-semibold text-gray-900 mb-2">Remote Patient Monitoring Platform</h4>
+                <p className="text-sm text-gray-500 mb-3">
+                  Built by a former ICU nurse, this platform uses wearables and AI to monitor chronic disease patients at home — reducing hospital readmissions by alerting care teams before crises occur.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Wearable Integration</span>
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Predictive Alerts</span>
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">ME</span>
+                </div>
+              </div>
+              <div className="border-l-2 border-teal-500 pl-6">
+                <h4 className="font-semibold text-gray-900 mb-2">AI-Assisted Clinical Consultations</h4>
+                <p className="text-sm text-gray-500 mb-3">
+                  Founded by a physician frustrated with 5-minute appointments, this tool helps doctors capture patient history, surface relevant insights, and generate accurate documentation — giving them time back for actual care.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">NLP</span>
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Clinical Decision Support</span>
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">India</span>
+                </div>
+              </div>
+              <div className="border-l-2 border-teal-500 pl-6">
+                <h4 className="font-semibold text-gray-900 mb-2">Smart Pharmacy Network</h4>
+                <p className="text-sm text-gray-500 mb-3">
+                  A pharmacist-led platform connecting rural pharmacies with real-time inventory, demand forecasting, and patient medication adherence tracking — ensuring the right medicines reach the right communities.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Supply Chain ML</span>
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Adherence Tracking</span>
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Africa</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <h3 className="text-xl font-semibold text-gray-900 mb-3">Coming Soon</h3>
-          <p className="text-gray-500 max-w-md mx-auto">
-            We're actively deploying capital and will announce our portfolio companies soon.
+
+          {/* Agriculture */}
+          <div className="bg-white border border-gray-200 rounded-2xl p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                <Wheat className="text-green-600" size={20} />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900">Food & Agriculture</h3>
+            </div>
+            <div className="space-y-6">
+              <div className="border-l-2 border-teal-500 pl-6">
+                <h4 className="font-semibold text-gray-900 mb-2">IoT-Enabled Dairy Operations</h4>
+                <p className="text-sm text-gray-500 mb-3">
+                  Built by a third-generation dairy farmer, this platform deploys sensors across the farm to monitor animal health, automate feeding schedules, and predict milk yield — helping smallholder farms operate like modern operations.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">IoT Sensors</span>
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Yield Prediction</span>
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">India</span>
+                </div>
+              </div>
+              <div className="border-l-2 border-teal-500 pl-6">
+                <h4 className="font-semibold text-gray-900 mb-2">Precision Horticulture Platform</h4>
+                <p className="text-sm text-gray-500 mb-3">
+                  An agronomist-founded company using computer vision and soil sensors to help fruit and vegetable farmers optimize irrigation, detect disease early, and reduce chemical inputs — all from a mobile app.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Computer Vision</span>
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Soil Analytics</span>
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Africa</span>
+                </div>
+              </div>
+              <div className="border-l-2 border-teal-500 pl-6">
+                <h4 className="font-semibold text-gray-900 mb-2">Livestock Health Intelligence</h4>
+                <p className="text-sm text-gray-500 mb-3">
+                  Founded by a veterinarian, this platform uses wearables and ML to monitor cattle and poultry health in real-time — catching illness early, optimizing feed, and improving animal welfare across commercial farms.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Wearable Tech</span>
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Animal Health ML</span>
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-12 bg-teal-50 rounded-2xl p-8 text-center">
+          <p className="text-gray-600 mb-2">
+            Company names anonymized at founder request. Details shared during diligence.
           </p>
         </div>
 
@@ -451,11 +533,11 @@ const Pitch = () => {
       <div className="max-w-3xl mx-auto">
         <p className="text-sm font-medium text-gray-400 uppercase tracking-wider mb-4">Pitch Us</p>
         <h1 className="text-4xl md:text-5xl font-semibold text-gray-900 leading-tight mb-8">
-          Let's build the future together
+          Tell us what you've seen
         </h1>
 
         <p className="text-xl text-gray-500 mb-12">
-          We're always excited to meet ambitious founders. Here's how to get in touch.
+          You've worked in the field. You know where the system breaks. Now you're ready to fix it. We want to hear your story.
         </p>
 
         <div className="space-y-8">
@@ -487,36 +569,29 @@ const Pitch = () => {
               <li className="flex items-start gap-3">
                 <span className="w-1.5 h-1.5 bg-teal-600 rounded-full mt-2 flex-shrink-0"></span>
                 <div>
-                  <span className="text-gray-900 font-medium">The problem & your solution</span>
-                  <p className="text-sm mt-1">What pain are you solving? How does your product work?</p>
+                  <span className="text-gray-900 font-medium">Your experience</span>
+                  <p className="text-sm mt-1">What have you seen working in healthcare, agriculture, or your community? What problem keeps you up at night?</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <span className="w-1.5 h-1.5 bg-teal-600 rounded-full mt-2 flex-shrink-0"></span>
                 <div>
-                  <span className="text-gray-900 font-medium">Why now?</span>
-                  <p className="text-sm mt-1">What's changed that makes this the right time to build this?</p>
+                  <span className="text-gray-900 font-medium">Your solution</span>
+                  <p className="text-sm mt-1">What are you building? How does it help the people you've worked alongside?</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <span className="w-1.5 h-1.5 bg-teal-600 rounded-full mt-2 flex-shrink-0"></span>
                 <div>
-                  <span className="text-gray-900 font-medium">Your data/AI moat</span>
-                  <p className="text-sm mt-1">What's defensible? Proprietary data, unique model, or network effects?</p>
+                  <span className="text-gray-900 font-medium">Who you serve</span>
+                  <p className="text-sm mt-1">Which patients, farmers, or communities will benefit? How will you reach them?</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <span className="w-1.5 h-1.5 bg-teal-600 rounded-full mt-2 flex-shrink-0"></span>
                 <div>
-                  <span className="text-gray-900 font-medium">Market size</span>
-                  <p className="text-sm mt-1">How big is the opportunity? Who are the buyers?</p>
-                </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 bg-teal-600 rounded-full mt-2 flex-shrink-0"></span>
-                <div>
-                  <span className="text-gray-900 font-medium">Team & unfair advantage</span>
-                  <p className="text-sm mt-1">Why are you the right people to build this?</p>
+                  <span className="text-gray-900 font-medium">Why you</span>
+                  <p className="text-sm mt-1">What makes your perspective unique? What have you learned that others haven't?</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
