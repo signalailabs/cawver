@@ -83,7 +83,7 @@ const Home = () => {
             <span className="text-gray-400">Cover the seed.</span>
           </h1>
           <p className="mt-8 text-xl text-gray-500 max-w-2xl leading-relaxed">
-            We invest in exceptional founders building the data and AI infrastructure that will power the next decade of innovation.
+            We back founders using AI and data to solve real problems — improving patient outcomes, feeding communities sustainably, and building the infrastructure that connects technology to human impact.
           </p>
           <div className="mt-12 flex flex-col sm:flex-row gap-4">
             <Link
