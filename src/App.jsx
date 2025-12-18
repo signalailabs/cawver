@@ -270,22 +270,26 @@ const Home = () => {
       {/* Stats */}
       <section className="py-24 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-12 text-center">
+          <div className="grid md:grid-cols-5 gap-8 text-center">
             <div>
-              <p className="text-5xl font-semibold text-gray-900">$50K-$750K</p>
+              <p className="text-3xl md:text-4xl font-semibold text-gray-900">$50K-$750K</p>
               <p className="text-gray-500 mt-2">Check size</p>
             </div>
             <div>
-              <p className="text-5xl font-semibold text-gray-900">Pre-seed</p>
+              <p className="text-3xl md:text-4xl font-semibold text-gray-900">Pre-seed</p>
               <p className="text-gray-500 mt-2">Primary stage</p>
             </div>
             <div>
-              <p className="text-5xl font-semibold text-gray-900">2 weeks</p>
+              <p className="text-3xl md:text-4xl font-semibold text-gray-900">2 weeks</p>
               <p className="text-gray-500 mt-2">Decision timeline</p>
             </div>
             <div>
-              <p className="text-5xl font-semibold text-gray-900">Founder</p>
-              <p className="text-gray-500 mt-2">First mentality</p>
+              <p className="text-3xl md:text-4xl font-semibold text-gray-900">Founder First</p>
+              <p className="text-gray-500 mt-2">Our mentality</p>
+            </div>
+            <div>
+              <p className="text-3xl md:text-4xl font-semibold text-gray-900">India & Africa</p>
+              <p className="text-gray-500 mt-2">Geographic focus</p>
             </div>
           </div>
         </div>
