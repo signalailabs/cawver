@@ -858,6 +858,13 @@ const Pitch = () => {
               <li className="flex items-start gap-3">
                 <span className="w-1.5 h-1.5 bg-teal-600 rounded-full mt-2 flex-shrink-0"></span>
                 <div>
+                  <span className="text-gray-900 font-medium">Traction</span>
+                  <p className="text-sm mt-1">Are you generating revenue? Have paying customers or signed LOIs? Early traction signals matter to us.</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 bg-teal-600 rounded-full mt-2 flex-shrink-0"></span>
+                <div>
                   <span className="text-gray-900 font-medium">Why you</span>
                   <p className="text-sm mt-1">What makes your perspective unique? What have you learned that others haven't?</p>
                 </div>
@@ -870,6 +877,28 @@ const Pitch = () => {
                 </div>
               </li>
             </ul>
+          </div>
+
+          {/* Earlier Stage CTA */}
+          <div className="bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 rounded-2xl p-8">
+            <div className="flex flex-col md:flex-row md:items-center gap-6">
+              <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm">
+                <Rocket className="text-amber-500" size={28} />
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg font-semibold text-gray-900 mb-1">Still early? No traction yet?</h3>
+                <p className="text-gray-600">
+                  The Garage is our 12-week program for practitioner-founders at the idea stage. We'll help you validate, build, and get to your first customers.
+                </p>
+              </div>
+              <Link
+                to="/garage"
+                className="inline-flex items-center justify-center gap-2 bg-amber-500 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-amber-600 transition-colors whitespace-nowrap"
+              >
+                Explore The Garage
+                <ArrowRight size={16} />
+              </Link>
+            </div>
           </div>
 
           {/* Response Time */}
