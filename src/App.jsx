@@ -1136,7 +1136,7 @@ const Footer = () => {
             <Link to="/pitch" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Pitch Us</Link>
           </div>
           <div className="text-sm text-gray-400 text-center md:text-right">
-            <p>&copy; 2025 Cawver. All rights reserved.</p>
+            <p>&copy; 2026 Cawver. All rights reserved.</p>
             <p className="text-xs text-gray-300 mt-1">Logo designed by Pritam Pebam, 2014</p>
           </div>
         </div>
