@@ -578,8 +578,8 @@ const AnimatedTimeline = () => {
 
   return (
     <div className="relative py-8">
-      {/* SVG Path connecting the dots */}
-      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 800 120" preserveAspectRatio="none">
+      {/* Desktop SVG Path - hidden on mobile */}
+      <svg className="absolute inset-0 w-full h-full hidden md:block" viewBox="0 0 800 120" preserveAspectRatio="xMidYMid meet">
         <defs>
           <linearGradient id="pathGradient" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="#14b8a6" />
@@ -611,8 +611,38 @@ const AnimatedTimeline = () => {
         />
       </svg>
 
+      {/* Mobile SVG Path - vertical flow for 2-column grid */}
+      <svg className="absolute inset-0 w-full h-full md:hidden" viewBox="0 0 200 300" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <linearGradient id="pathGradientMobile" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="#14b8a6" />
+            <stop offset="100%" stopColor="#0d9488" />
+          </linearGradient>
+        </defs>
+        <path
+          d="M 50 40 Q 100 60 150 80 Q 100 120 50 160 Q 100 200 150 220 Q 100 260 50 280"
+          fill="none"
+          stroke="url(#pathGradientMobile)"
+          strokeWidth="3"
+          strokeLinecap="round"
+          style={{
+            strokeDasharray: 600,
+            strokeDashoffset: 0,
+            animation: 'drawPath 2s ease-out forwards'
+          }}
+        />
+        <path
+          d="M 50 40 Q 100 60 150 80 Q 100 120 50 160 Q 100 200 150 220 Q 100 260 50 280"
+          fill="none"
+          stroke="#14b8a6"
+          strokeWidth="6"
+          strokeLinecap="round"
+          opacity="0.2"
+        />
+      </svg>
+
       {/* Timeline Steps */}
-      <div className="relative grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="relative grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4">
         {steps.map((step, i) => (
           <div
             key={i}
@@ -622,7 +652,7 @@ const AnimatedTimeline = () => {
               opacity: 0
             }}
           >
-            <div className={`w-16 h-16 bg-white rounded-2xl shadow-lg flex items-center justify-center text-2xl mb-3 transform hover:scale-110 transition-transform ${i % 2 === 0 ? 'mt-0' : 'mt-8'}`}>
+            <div className={`w-14 h-14 md:w-16 md:h-16 bg-white rounded-2xl shadow-lg flex items-center justify-center text-xl md:text-2xl mb-3 transform hover:scale-110 transition-transform ${i % 2 === 0 ? 'md:mt-0' : 'md:mt-8'}`}>
               {step.icon}
             </div>
             <p className="font-semibold text-gray-900 text-sm md:text-base">{step.date}</p>
