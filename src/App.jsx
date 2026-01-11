@@ -339,7 +339,7 @@ const Thesis = () => {
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Practitioner insight</h3>
                 <p className="text-gray-500">
-                  Founders who've done the work — treated patients, grown crops, served communities — and deeply understand the problems they're solving.
+                  Founders who've done the work — built data systems, deployed AI in production, treated patients, grown crops — and deeply understand the problems they're solving.
                 </p>
               </div>
             </div>
@@ -351,7 +351,7 @@ const Thesis = () => {
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Real-world impact</h3>
                 <p className="text-gray-500">
-                  Solutions that improve patient outcomes, help farmers thrive, or strengthen food security — not technology for technology's sake.
+                  Solutions that move data at scale, automate complex workflows, improve patient outcomes, or help farmers thrive — not technology for technology's sake.
                 </p>
               </div>
             </div>
@@ -363,7 +363,7 @@ const Thesis = () => {
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Scalable approach</h3>
                 <p className="text-gray-500">
-                  Ideas that can grow beyond one clinic, one farm, one community — reaching the millions who need these solutions.
+                  Ideas that can grow beyond one team, one clinic, one farm — reaching the enterprises and communities who need these solutions.
                 </p>
               </div>
             </div>
