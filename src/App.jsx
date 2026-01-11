@@ -270,7 +270,7 @@ const Home = () => {
       {/* Stats */}
       <section className="py-24 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-3 gap-12 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center">
             <div>
               <p className="text-4xl md:text-5xl font-semibold text-gray-900">$50K-$750K</p>
               <p className="text-gray-500 mt-2">Check size</p>
@@ -612,7 +612,7 @@ const AnimatedTimeline = () => {
       </svg>
 
       {/* Timeline Steps */}
-      <div className="relative grid grid-cols-4 gap-4">
+      <div className="relative grid grid-cols-2 md:grid-cols-4 gap-4">
         {steps.map((step, i) => (
           <div
             key={i}
