@@ -1,0 +1,41 @@
+<svg viewBox="0 0 300 300" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Teal background -->
+  <rect width="300" height="300" rx="40" fill="#0d9488"/>
+
+  <!-- Car logo centered -->
+  <g transform="translate(90, 70)">
+    <!-- Car body -->
+    <path
+      d="M15 70 Q15 35 60 35 Q105 35 105 70 L105 75 L15 75 Z"
+      fill="#f8fafc"
+      stroke="#ffffff"
+      stroke-width="3"
+    />
+    <!-- Window divider -->
+    <line x1="60" y1="35" x2="60" y2="70" stroke="#e2e8f0" stroke-width="2" />
+    <!-- Left window tint -->
+    <path
+      d="M18 70 Q18 40 58 40 L58 70 Z"
+      fill="#d1d5db"
+      opacity="0.3"
+    />
+    <!-- Tail lights -->
+    <rect x="100" y="52" width="8" height="4" rx="1" fill="#f59e0b" />
+    <rect x="100" y="58" width="8" height="4" rx="1" fill="#ef4444" />
+    <!-- Left wheel -->
+    <g>
+      <circle cx="30" cy="80" r="15" fill="#334155" stroke="#ffffff" stroke-width="3" />
+      <circle cx="30" cy="80" r="8" fill="#f8fafc" />
+      <circle cx="30" cy="80" r="3" fill="#334155" />
+    </g>
+    <!-- Right wheel -->
+    <g>
+      <circle cx="90" cy="80" r="15" fill="#334155" stroke="#ffffff" stroke-width="3" />
+      <circle cx="90" cy="80" r="8" fill="#f8fafc" />
+      <circle cx="90" cy="80" r="3" fill="#334155" />
+    </g>
+  </g>
+
+  <!-- cawver text -->
+  <text x="150" y="235" font-family="system-ui, -apple-system, sans-serif" font-size="42" font-weight="600" fill="white" text-anchor="middle">cawver</text>
+</svg>
