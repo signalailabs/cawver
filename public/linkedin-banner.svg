@@ -1,0 +1,10 @@
+<svg viewBox="0 0 1128 191" width="1128" height="191" xmlns="http://www.w3.org/2000/svg">
+  <!-- Teal background -->
+  <rect width="1128" height="191" fill="#0d9488"/>
+
+  <!-- cawver text -->
+  <text x="564" y="85" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="600" fill="white" text-anchor="middle">cawver</text>
+
+  <!-- Tagline -->
+  <text x="564" y="135" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="400" fill="#99f6e4" text-anchor="middle">Backing practitioner-founders</text>
+</svg>

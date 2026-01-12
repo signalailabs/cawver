@@ -120,7 +120,7 @@ const Home = () => {
     <div className="min-h-screen">
       {/* The Garage Banner - Top Priority */}
       <section className="pt-28 pb-8 px-6 bg-gradient-to-r from-gray-900 to-gray-800">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div>
               <div className="flex items-center gap-3 mb-2">
@@ -146,8 +146,8 @@ const Home = () => {
       </section>
 
       {/* Hero */}
-      <section className="pt-20 pb-32 px-6 overflow-hidden">
-        <div className="max-w-4xl mx-auto">
+      <section className="pt-16 pb-16 px-6 overflow-hidden">
+        <div className="max-w-6xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-semibold text-gray-900 leading-tight tracking-tight">
             Discover the future.
             <br />
@@ -175,7 +175,7 @@ const Home = () => {
       </section>
 
       {/* Focus Areas */}
-      <section className="py-24 px-6">
+      <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <p className="text-sm font-medium text-gray-400 uppercase tracking-wider mb-4">Our Focus</p>
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
@@ -264,8 +264,8 @@ const Home = () => {
       </section>
 
       {/* Stats */}
-      <section className="py-24 px-6 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
+      <section className="py-16 px-6 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center">
             <div>
               <p className="text-4xl md:text-5xl font-semibold text-gray-900">$50K-$750K</p>
@@ -285,8 +285,8 @@ const Home = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-24 px-6 bg-slate-800">
-        <div className="max-w-3xl mx-auto text-center">
+      <section className="py-16 px-6 bg-slate-800">
+        <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
             You've lived the problem. Now build the solution.
           </h2>
