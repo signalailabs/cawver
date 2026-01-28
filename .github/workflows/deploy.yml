@@ -1,0 +1,31 @@
+name: Deploy to EC2
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy using SSH
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          port: 22
+          script: |
+            # Navigate to the parent 'website' directory defined in secrets
+            cd ${{ secrets.PROJECT_PATH }}
+            
+            # Navigate into the repository folder to pull latest code
+            cd cawver
+            git pull https://${{ secrets.PAT_TOKEN }}@github.com/signalailabs/cawver.git main
+            
+            # Return to the parent directory where docker-compose.yml is located
+            cd ..
+            
+            # Restart Docker containers
+            sudo docker compose up -d --build cawver
